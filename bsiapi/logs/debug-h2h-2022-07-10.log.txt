@@ -1,0 +1,48 @@
+string(19) "2022-07-10 06:41:07"
+string(858) "REQUEST_CONFIG: {"action":"notifikasi_pembayaran","kodeBank":"BSM","kodeBiller":"10b2ce31501789444260f8a6afadf411","kodeChannel":"ATM","kodeTerminal":"Non-BSI OI360009","nomorPembayaran":"92362","tanggalTransaksi":"2022-07-10 06:40:53.288593","idTransaksi":"1613684","idTagihan":"SD2022-07-92362","totalNominal":"595000","nomorJurnalPembukuan":"7757170709234051000451","idPelanggan":"362","nama":"M. ASY-SYABBAZ AZZAM UTOMO","informasi":[{"label_key":"Kelas","label_value":"SD REG 5"}],"rincian":[{"kode_rincian":"DPB","nominal":"595000"}],"statusValidasi":"Sukses","checksum":"0134402adb74e4ab49e4df06dc6fb94e7806f03f","idInstitusi":"10b2ce31501789444260f8a6afadf411","kodeBPI":"2399","namaInstitusi":"UTSMAN BIN AFFAN","totalFee":"2500","penanggungFee":"Biller","totalNominalPembayaranDanFee":"595000","shortURLTagihan":"TGBhaS","shortURLReceipt":"RHD6fd"}"
+
+string(19) "2022-07-10 06:41:07"
+string(13) "START PAYMENT"
+
+string(19) "2022-07-10 06:41:07"
+string(15) "CEK-DPB: UPDATE"
+
+string(19) "2022-07-10 06:41:07"
+string(11) "END PAYMENT"
+
+string(19) "2022-07-10 08:36:23"
+string(873) "REQUEST_CONFIG: {"action":"notifikasi_pembayaran","kodeBank":"BSM","kodeBiller":"10b2ce31501789444260f8a6afadf411","kodeChannel":"MBANK","kodeTerminal":"Non-BSI JTMMB    JTMMB","nomorPembayaran":"92473","tanggalTransaksi":"2022-07-10 08:36:11.722602","idTransaksi":"1613800","idTagihan":"SD2022-07-92473","totalNominal":"605000","nomorJurnalPembukuan":"9075340710013609000451","idPelanggan":"473","nama":"BILQIS 'IZZAH JAUHAROTUL MUMTAZAH","informasi":[{"label_key":"Kelas","label_value":"SD REG 3"}],"rincian":[{"kode_rincian":"DPB","nominal":"605000"}],"statusValidasi":"Sukses","checksum":"1752b43ea252d0820c41e8b589b067d35470b949","idInstitusi":"10b2ce31501789444260f8a6afadf411","kodeBPI":"2399","namaInstitusi":"UTSMAN BIN AFFAN","totalFee":"2500","penanggungFee":"Biller","totalNominalPembayaranDanFee":"605000","shortURLTagihan":"TG7AFR","shortURLReceipt":"RHdFw7"}"
+
+string(19) "2022-07-10 08:36:23"
+string(13) "START PAYMENT"
+
+string(19) "2022-07-10 08:36:23"
+string(15) "CEK-DPB: UPDATE"
+
+string(19) "2022-07-10 08:36:23"
+string(11) "END PAYMENT"
+
+string(19) "2022-07-10 10:31:02"
+string(1008) "REQUEST_CONFIG: {"action":"notifikasi_pembayaran","kodeBank":"BSM","kodeBiller":"10b2ce31501789444260f8a6afadf411","kodeChannel":"ATM","kodeTerminal":"Non-BSI OE360008","nomorPembayaran":"83107","tanggalTransaksi":"2022-07-10 10:30:50.306146","idTransaksi":"1614003","idTagihan":"DU-SMP-2022-83107","totalNominal":"2345000","nomorJurnalPembukuan":"1357350710033043000451","idPelanggan":"107","nama":"ALVIN FADILAH AZZURA","informasi":[{"label_key":"Kelas","label_value":"SMP 7"}],"rincian":[{"kode_rincian":"Komite","nominal":"50000"},{"kode_rincian":"TO AKM","nominal":"100000"},{"kode_rincian":"Buku Dan Peralatan","nominal":"795000"},{"kode_rincian":"Tagihan DPP","nominal":"1400000"}],"statusValidasi":"Sukses","checksum":"6d8dd4f9457ce081ff2f8a3d003cfdf3624f2805","idInstitusi":"10b2ce31501789444260f8a6afadf411","kodeBPI":"2399","namaInstitusi":"UTSMAN BIN AFFAN","totalFee":"2500","penanggungFee":"Biller","totalNominalPembayaranDanFee":"2345000","shortURLTagihan":"TrZ7KZ","shortURLReceipt":"RHnFDX"}"
+
+string(19) "2022-07-10 10:31:02"
+string(13) "START PAYMENT"
+
+string(19) "2022-07-10 10:31:02"
+string(14) "CEK-DU: UPDATE"
+
+string(19) "2022-07-10 10:31:02"
+string(11) "END PAYMENT"
+
+string(19) "2022-07-10 18:17:12"
+string(866) "REQUEST_CONFIG: {"action":"notifikasi_pembayaran","kodeBank":"BSM","kodeBiller":"10b2ce31501789444260f8a6afadf411","kodeChannel":"MBANK","kodeTerminal":"BSI OM360451 087095533625","nomorPembayaran":"92410","tanggalTransaksi":"2022-07-10 18:16:52.314548","idTransaksi":"1614867","idTagihan":"SD2022-07-92410","totalNominal":"805000","nomorJurnalPembukuan":"0331910710111649000451","idPelanggan":"410","nama":"KEVIN ALVARO ADIWIDJAYA","informasi":[{"label_key":"Kelas","label_value":"SD ICP 4"}],"rincian":[{"kode_rincian":"DPB","nominal":"805000"}],"statusValidasi":"Sukses","checksum":"7c0062159627caaffdc9a0549539768f7e76f72a","idInstitusi":"10b2ce31501789444260f8a6afadf411","kodeBPI":"2399","namaInstitusi":"UTSMAN BIN AFFAN","totalFee":"2500","penanggungFee":"Biller","totalNominalPembayaranDanFee":"805000","shortURLTagihan":"TG6F2b","shortURLReceipt":"RHpY9e"}"
+
+string(19) "2022-07-10 18:17:12"
+string(13) "START PAYMENT"
+
+string(19) "2022-07-10 18:17:12"
+string(15) "CEK-DPB: UPDATE"
+
+string(19) "2022-07-10 18:17:12"
+string(11) "END PAYMENT"
+
