@@ -460,6 +460,8 @@ $config['csrf_exclude_uris'] = array(
     'finance/income/income/check_invoice_number_du',
     'finance/income/income/check_payment_number_du',
     'finance/income/income/confirm_update_income',
+		'finance/income/income/get_data_income_dpb',
+		'finance/income/income/get_data_income_du',
 );
 /*
   |--------------------------------------------------------------------------
