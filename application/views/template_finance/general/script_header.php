@@ -34,6 +34,9 @@
 		.g-recaptcha {
 			display: inline-block;
 		}
+		#recaptcha_delete > div {
+			margin: 0 auto .5em;
+		}
 
 		.select2-container {
 			box-sizing: border-box;
@@ -54,7 +57,7 @@
 			height: auto;
 			line-height: 0;
 			padding: 0.23rem 0.42rem;
-			background: #F3F6F9;
+			background: #FFFFFF;
 		}
 
 		.was-validated .form-control:valid,

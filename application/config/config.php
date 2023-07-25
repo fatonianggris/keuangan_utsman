@@ -445,7 +445,7 @@ $config['global_xss_filtering'] = TRUE;
   | 'csrf_exclude_uris' = Array of URIs which ignore CSRF checks
  */
 $config['csrf_protection'] = TRUE;
-$config['csrf_token_name'] = 'csrf_test_name';
+$config['csrf_token_name'] = 'csrf_hash_name';
 $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 28800;
 $config['csrf_regenerate'] = TRUE;
@@ -462,6 +462,9 @@ $config['csrf_exclude_uris'] = array(
     'finance/income/income/confirm_update_income',
 		'finance/income/income/get_data_income_dpb',
 		'finance/income/income/get_data_income_du',
+		'finance/savings/saving_transaction',
+		'finance/savings/print_saving_pdf',
+		'finance/savings/get_student_transaction_recap'
 );
 /*
   |--------------------------------------------------------------------------
