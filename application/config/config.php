@@ -464,7 +464,8 @@ $config['csrf_exclude_uris'] = array(
 		'finance/income/income/get_data_income_du',
 		'finance/savings/saving_transaction',
 		'finance/savings/print_saving_pdf',
-		'finance/savings/get_student_transaction_recap'
+		'finance/savings/get_student_transaction_recap',
+		'finance/savings/savings/get_all_student',
 );
 /*
   |--------------------------------------------------------------------------

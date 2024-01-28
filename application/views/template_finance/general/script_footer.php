@@ -17,6 +17,7 @@
 <script src="<?php echo base_url(); ?>assets/finance/dist/assets/js/pages/crud/forms/widgets/bootstrap-switch.js"></script>
 <script src="<?php echo base_url(); ?>assets/finance/dist/assets/js/pages/features/miscellaneous/sweetalert2.js"></script>
 <script src="<?php echo base_url(); ?>assets/finance/dist/assets/js/dropify.js"></script>
+<script src="<?php echo base_url(); ?>assets/finance/dist/assets/js/pages/crud/forms/widgets/tagify.js"></script>
 
 <!-- Magnific popup JavaScript -->
 <script src="<?php echo base_url(); ?>assets/finance/dist/assets/plugins/custom/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
