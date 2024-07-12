@@ -262,6 +262,7 @@
 <script src="https://gyrocode.github.io/jquery-datatables-checkboxes/1.2.11/js/dataTables.checkboxes.min.js"></script>
 <script>
 	var HOST_URL = "<?php echo base_url(); ?>";
+	var CAPTCA_KEY = "<?php echo $this->config->item('google_site_key'); ?>";
 </script>
-
+<script src="<?php echo base_url(); ?>assets/finance/dist/assets/js/YouShallPass.js"></script>
 <!--end::Global Theme Bundle-->

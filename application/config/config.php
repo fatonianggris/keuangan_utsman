@@ -463,9 +463,20 @@ $config['csrf_exclude_uris'] = array(
 		'finance/income/income/get_data_income_dpb',
 		'finance/income/income/get_data_income_du',
 		'finance/savings/saving_transaction',
-		'finance/savings/print_saving_pdf',
 		'finance/savings/get_student_transaction_recap',
 		'finance/savings/savings/get_all_student',
+		'finance/savings/check_number_personal_saving',
+		'finance/savings/check_number_joint_saving',
+		'finance/savings/check_pin_number',
+		'finance/savings/check_number_import_personal_saving',
+		'finance/report/print_data_personal_saving_pdf_all',
+		'finance/report/print_data_joint_saving_pdf_all',
+		'finance/report/print_data_pdf_transaction_general_all',
+		'finance/report/print_data_pdf_transaction_qurban_all',
+		'finance/report/print_data_pdf_transaction_tour_all',
+		'finance/report/print_data_pdf_transaction_joint_all',
+		'finance/report/print_data_pdf_transaction_joint_recap_all',
+		'finance/report/print_data_pdf_transaction_recap_all',
 );
 /*
   |--------------------------------------------------------------------------
