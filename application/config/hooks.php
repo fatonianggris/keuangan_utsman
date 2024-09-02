@@ -25,3 +25,10 @@ $hook['post_controller_constructor'][] = array(
     'filename' => 'Track_visitor.php',
     'filepath' => 'hooks'
 );
+
+$hook['pre_system'][] = array(
+	'class'    => 'Maintenance_hook',
+	'function' => 'offline_check',
+	'filename' => 'Maintenance_hook.php',
+	'filepath' => 'hooks'
+	);

@@ -575,3 +575,19 @@ $config['rewrite_short_tags'] = false;
 | Array:        array('10.0.1.200', '192.168.5.0/24')
  */
 $config['proxy_ips'] = '';
+
+
+/*
+|--------------------------------------------------------------------------
+| Maintenance Mode
+|--------------------------------------------------------------------------
+|
+| For whatever reason sometimes a site needs to be taken offline.
+| Set $config['maintenance_mode'] to TRUE if the site has to be offline
+|
+| $config['maintenance_mode'] = TRUE; // site is offline
+| $config['maintenance_mode'] = FALSE; // site is online
+|
+*/
+$config['maintenance_mode'] = FALSE;
+
