@@ -234,7 +234,7 @@
                                         </ul>
                                     </div>
                                 </li>
-								<?php if ($user[0]->id_role_struktur == 5) {?>
+
                                 <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover"
                                     aria-haspopup="true">
                                     <a href="javascript:;" class="menu-link menu-toggle">
@@ -262,7 +262,7 @@
                                     <div class="menu-submenu menu-submenu-classic menu-submenu-right">
                                         <ul class="menu-subnav">
                                             <li class="menu-item" aria-haspopup="true">
-                                                <a href="<?php echo site_url("/finance/savings/add_personal_saving") ?>"
+                                                <a href="<?php echo site_url("/finance/savings/add_employee_saving") ?>"
                                                     class="menu-link">
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
@@ -271,7 +271,7 @@
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
-                                                <a href="<?php echo site_url("/finance/savings/list_personal_saving") ?>"
+                                                <a href="<?php echo site_url("/finance/savings/list_employee_saving") ?>"
                                                     class="menu-link">
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
@@ -279,6 +279,7 @@
                                                     <span class="menu-text">Daftar Nasabah</span>
                                                 </a>
                                             </li>
+											<?php if ($user[0]->id_role_struktur == 5) {?>
                                             <li class="menu-item" aria-haspopup="true">
                                                 <a href="<?php echo site_url("/finance/savings/savings_recap") ?>"
                                                     class="menu-link">
@@ -288,8 +289,9 @@
                                                     <span class="menu-text">Insight Tabungan</span>
                                                 </a>
                                             </li>
+											<?php }?>
                                             <li class="menu-item" aria-haspopup="true">
-                                                <a href="<?php echo site_url("/finance/savings/saving_general_transaction") ?>"
+                                                <a href="<?php echo site_url("/finance/savings/saving_general_transaction_employee") ?>"
                                                     class="menu-link">
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
@@ -297,10 +299,29 @@
                                                     <span class="menu-text">Setor & Tarik Tabungan Umum</span>
                                                 </a>
                                             </li>
+                                            <?php if ($user[0]->id_role_struktur == 5) {?>
+                                            <li class="menu-item" aria-haspopup="true">
+                                                <a href="<?php echo site_url("/finance/savings/saving_qurban_transaction_employee") ?>"
+                                                    class="menu-link">
+                                                    <i class="menu-bullet menu-bullet-dot">
+                                                        <span></span>
+                                                    </i>
+                                                    <span class="menu-text">Setor & Tarik Tabungan Qurban</span>
+                                                </a>
+                                            </li>
+                                            <li class="menu-item" aria-haspopup="true">
+                                                <a href="<?php echo site_url("/finance/savings/saving_tour_transaction_employee") ?>"
+                                                    class="menu-link">
+                                                    <i class="menu-bullet menu-bullet-dot">
+                                                        <span></span>
+                                                    </i>
+                                                    <span class="menu-text">Setor & Tarik Tabungan Wisata</span>
+                                                </a>
+                                            </li>
+                                            <?php }?>
                                         </ul>
                                     </div>
                                 </li>
-								<?php }?>
                                 <li class="menu-item menu-item-submenu" aria-haspopup="true" data-menu-toggle="hover"
                                     aria-haspopup="true">
                                     <a href="javascript:;" class="menu-link menu-toggle">

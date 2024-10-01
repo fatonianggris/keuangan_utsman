@@ -488,27 +488,59 @@ $config['csrf_exclude_uris'] = array(
     'finance/income/income/reject_import_payment_dpb',
     'finance/income/income/accept_import_payment_du',
     'finance/income/income/reject_import_payment_du',
+
     'finance/savings/saving_transaction',
     'finance/savings/get_student_transaction_recap',
     'finance/savings/savings/get_all_student',
+	'finance/savings/check_pin_number',
+
     'finance/savings/check_number_personal_saving',
+    'finance/savings/check_number_employee_saving',
     'finance/savings/check_number_joint_saving',
-    'finance/savings/check_pin_number',
+
     'finance/savings/check_number_import_personal_saving',
     'finance/savings/check_number_import_joint_saving',
+    'finance/savings/check_number_import_employee_saving',
+
     'finance/savings/check_name_import_personal_saving',
+    'finance/savings/check_name_import_joint_saving',
+    'finance/savings/check_name_import_employee_saving',
+
     'finance/savings/accept_import_personal_saving',
     'finance/savings/accept_import_joint_saving',
+    'finance/savings/accept_import_employee_saving',
+
     'finance/savings/reject_import_personal_saving',
     'finance/savings/reject_import_joint_saving',
+    'finance/savings/reject_import_employee_saving',
+
     'finance/report/print_data_personal_saving_pdf_all',
     'finance/report/print_data_joint_saving_pdf_all',
+    'finance/report/print_data_employee_saving_pdf_all',
+
     'finance/report/print_data_pdf_transaction_general_all',
     'finance/report/print_data_pdf_transaction_qurban_all',
     'finance/report/print_data_pdf_transaction_tour_all',
+    'finance/report/print_data_pdf_transaction_general_all_employee',
+    'finance/report/print_data_pdf_transaction_qurban_all_employee',
+    'finance/report/print_data_pdf_transaction_tour_all_employee',
     'finance/report/print_data_pdf_transaction_joint_all',
+
+    'finance/report/export_data_csv_transaction_general_all',
+	'finance/report/export_data_csv_transaction_qurban_all',
+	'finance/report/export_data_csv_transaction_tour_all',
+	'finance/report/export_data_csv_transaction_general_all_employee',
+	'finance/report/export_data_csv_transaction_qurban_all_employee',
+	'finance/report/export_data_csv_transaction_tour_all_employee',
+	'finance/report/export_data_csv_transaction_joint_all',
+
     'finance/report/print_data_pdf_transaction_joint_recap_all',
     'finance/report/print_data_pdf_transaction_recap_all',
+    'finance/report/print_data_pdf_transaction_employee_recap_all',
+
+    'finance/report/print_data_employee_saving_pdf_all',
+    'finance/report/print_data_personal_saving_pdf_all',
+    'finance/report/export_data_joint_saving_csv_all',
 
 );
 /*
@@ -576,7 +608,6 @@ $config['rewrite_short_tags'] = false;
  */
 $config['proxy_ips'] = '';
 
-
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode
@@ -588,6 +619,5 @@ $config['proxy_ips'] = '';
 | $config['maintenance_mode'] = TRUE; // site is offline
 | $config['maintenance_mode'] = FALSE; // site is online
 |
-*/
-$config['maintenance_mode'] = FALSE;
-
+ */
+$config['maintenance_mode'] = false;
