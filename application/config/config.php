@@ -523,7 +523,7 @@ $config['csrf_exclude_uris'] = array(
     'finance/report/print_data_pdf_transaction_tour_all',
     'finance/report/print_data_pdf_transaction_general_all_employee',
     'finance/report/print_data_pdf_transaction_qurban_all_employee',
-    'finance/report/print_data_pdf_transaction_tour_all_employee',
+    'finance/report/print_data_pdf_transaction_tht_all_employee',
     'finance/report/print_data_pdf_transaction_joint_all',
 
     'finance/report/export_data_csv_transaction_general_all',
@@ -531,7 +531,7 @@ $config['csrf_exclude_uris'] = array(
 	'finance/report/export_data_csv_transaction_tour_all',
 	'finance/report/export_data_csv_transaction_general_all_employee',
 	'finance/report/export_data_csv_transaction_qurban_all_employee',
-	'finance/report/export_data_csv_transaction_tour_all_employee',
+	'finance/report/export_data_csv_transaction_tht_all_employee',
 	'finance/report/export_data_csv_transaction_joint_all',
 
     'finance/report/print_data_pdf_transaction_joint_recap_all',

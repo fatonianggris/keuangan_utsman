@@ -991,11 +991,11 @@ class ReportModel extends CI_Model
         return $sql->result_array();
     }
 
-    public function get_data_saving_excel_transaction_tour_all_employee($id = '')
+    public function get_data_saving_excel_transaction_tht_all_employee($id = '')
     {
         $sql = $this->db->query("SELECT
-								panel_utsman.tt.id_transaksi_wisata_pegawai,
-								panel_utsman.tt.nomor_transaksi_wisata,
+								panel_utsman.tt.id_transaksi_tht_pegawai,
+								panel_utsman.tt.nomor_transaksi_tht,
 								panel_utsman.tt.nip_pegawai,
 								panel_utsman.tt.id_tingkat,
 								panel_utsman.p.nama_lengkap,
@@ -1017,13 +1017,13 @@ class ReportModel extends CI_Model
 								SELECT
 									panel_utsman.vmax.id_max
 								FROM
-									panel_utsman.view_max_id_transaction_tour_employee vmax
+									panel_utsman.view_max_id_transaction_tht_employee vmax
 								WHERE
-									panel_utsman.tt.id_transaksi_wisata_pegawai = panel_utsman.vmax.id_max
+									panel_utsman.tt.id_transaksi_tht_pegawai = panel_utsman.vmax.id_max
 							) THEN 1 ELSE 0
 							END AS status_edit
 							FROM
-								panel_utsman.transaksi_tabungan_wisata_pegawai tt
+								panel_utsman.transaksi_tabungan_tht_pegawai tt
 							LEFT JOIN panel_utsman.pegawai p
 							ON
 								panel_utsman.p.nip = panel_utsman.tt.nip_pegawai
@@ -1033,9 +1033,9 @@ class ReportModel extends CI_Model
 							LEFT JOIN keuangan_utsman.akun_keuangan ak
 							ON
 								keuangan_utsman.ak.id_akun_keuangan = panel_utsman.tt.id_pegawai
-							WHERE panel_utsman.tt.id_transaksi_wisata_pegawai IN ($id)
+							WHERE panel_utsman.tt.id_transaksi_tht_pegawai IN ($id)
 							ORDER BY
-								panel_utsman.tt.id_transaksi_wisata_pegawai
+								panel_utsman.tt.id_transaksi_tht_pegawai
 							DESC");
 
         return $sql->result_array();
@@ -1375,8 +1375,8 @@ class ReportModel extends CI_Model
 										WHERE panel_utsman.tt.nomor_transaksi_qurban IN ($id)
 									UNION ALL
 									SELECT
-										panel_utsman.tt.id_transaksi_wisata_pegawai AS id_transaksi,
-										panel_utsman.tt.nomor_transaksi_wisata AS nomor_transaksi,
+										panel_utsman.tt.id_transaksi_tht_pegawai AS id_transaksi,
+										panel_utsman.tt.nomor_transaksi_tht AS nomor_transaksi,
 										panel_utsman.tt.nip_pegawai,
 										panel_utsman.tt.id_tingkat,
 										panel_utsman.p.nama_lengkap,
@@ -1402,13 +1402,13 @@ class ReportModel extends CI_Model
 										SELECT
 											panel_utsman.vmax.id_max
 										FROM
-											panel_utsman.view_max_id_transaction_tour_employee vmax
+											panel_utsman.view_max_id_transaction_tht_employee vmax
 										WHERE
-											panel_utsman.tt.id_transaksi_wisata_pegawai = panel_utsman.vmax.id_max
+											panel_utsman.tt.id_transaksi_tht_pegawai = panel_utsman.vmax.id_max
 									) THEN 1 ELSE 0
 									END AS status_edit
 									FROM
-										panel_utsman.transaksi_tabungan_wisata_pegawai tt
+										panel_utsman.transaksi_tabungan_tht_pegawai tt
 									LEFT JOIN panel_utsman.pegawai p
 									ON
 										panel_utsman.p.nip = panel_utsman.tt.nip_pegawai
@@ -1418,7 +1418,7 @@ class ReportModel extends CI_Model
 									LEFT JOIN keuangan_utsman.akun_keuangan ak
 									ON
 										keuangan_utsman.ak.id_akun_keuangan = panel_utsman.tt.id_pegawai
-										WHERE panel_utsman.tt.nomor_transaksi_wisata IN ($id)
+										WHERE panel_utsman.tt.nomor_transaksi_tht IN ($id)
 									ORDER BY
 										id_transaksi DESC
 									) RECAP
@@ -1733,11 +1733,11 @@ class ReportModel extends CI_Model
         return $sql->result();
     }
 
-    public function get_data_saving_pdf_tour_all_employee($id = '')
+    public function get_data_saving_pdf_tht_all_employee($id = '')
     {
         $sql = $this->db->query("SELECT
-								panel_utsman.tt.id_transaksi_wisata_pegawai,
-								panel_utsman.tt.nomor_transaksi_wisata AS nomor_transaksi,
+								panel_utsman.tt.id_transaksi_tht_pegawai,
+								panel_utsman.tt.nomor_transaksi_tht AS nomor_transaksi,
 								panel_utsman.tt.id_tingkat,
 								panel_utsman.tt.nip_pegawai,
 								panel_utsman.p.nama_lengkap,
@@ -1759,13 +1759,13 @@ class ReportModel extends CI_Model
 								SELECT
 									panel_utsman.vmax.id_max
 								FROM
-									panel_utsman.view_max_id_transaction_tour_employee vmax
+									panel_utsman.view_max_id_transaction_tht_employee vmax
 								WHERE
-									panel_utsman.tt.id_transaksi_wisata_pegawai = panel_utsman.vmax.id_max
+									panel_utsman.tt.id_transaksi_tht_pegawai = panel_utsman.vmax.id_max
 							) THEN 1 ELSE 0
 							END AS status_edit
 							FROM
-								panel_utsman.transaksi_tabungan_wisata_pegawai tt
+								panel_utsman.transaksi_tabungan_tht_pegawai tt
 							LEFT JOIN panel_utsman.pegawai p
 							ON
 								panel_utsman.p.nip = panel_utsman.tt.nip_pegawai
@@ -1775,9 +1775,9 @@ class ReportModel extends CI_Model
 							LEFT JOIN keuangan_utsman.akun_keuangan ak
 							ON
 								keuangan_utsman.ak.id_akun_keuangan = panel_utsman.tt.id_pegawai
-							WHERE panel_utsman.tt.id_transaksi_wisata_pegawai IN ($id)
+							WHERE panel_utsman.tt.id_transaksi_tht_pegawai IN ($id)
 							ORDER BY
-								panel_utsman.tt.id_transaksi_wisata_pegawai
+								panel_utsman.tt.id_transaksi_tht_pegawai
 							DESC");
 
         return $sql->result();
@@ -2118,8 +2118,8 @@ class ReportModel extends CI_Model
 										WHERE panel_utsman.tt.nomor_transaksi_qurban IN ($id)
 									UNION ALL
 									SELECT
-										panel_utsman.tt.id_transaksi_wisata_pegawai AS id_transaksi,
-										panel_utsman.tt.nomor_transaksi_wisata AS nomor_transaksi,
+										panel_utsman.tt.id_transaksi_tht_pegawai AS id_transaksi,
+										panel_utsman.tt.nomor_transaksi_tht AS nomor_transaksi,
 										panel_utsman.tt.nip_pegawai,
 										panel_utsman.tt.id_tingkat,
 										panel_utsman.p.nama_lengkap,
@@ -2145,13 +2145,13 @@ class ReportModel extends CI_Model
 										SELECT
 											panel_utsman.vmax.id_max
 										FROM
-											panel_utsman.view_max_id_transaction_tour_employee vmax
+											panel_utsman.view_max_id_transaction_tht_employee vmax
 										WHERE
-											panel_utsman.tt.id_transaksi_wisata_pegawai = panel_utsman.vmax.id_max
+											panel_utsman.tt.id_transaksi_tht_pegawai = panel_utsman.vmax.id_max
 									) THEN 1 ELSE 0
 									END AS status_edit
 									FROM
-										panel_utsman.transaksi_tabungan_wisata_pegawai tt
+										panel_utsman.transaksi_tabungan_tht_pegawai tt
 									LEFT JOIN panel_utsman.pegawai p
 									ON
 										panel_utsman.p.nip = panel_utsman.tt.nip_pegawai
@@ -2161,7 +2161,7 @@ class ReportModel extends CI_Model
 									LEFT JOIN keuangan_utsman.akun_keuangan ak
 									ON
 										keuangan_utsman.ak.id_akun_keuangan = panel_utsman.tt.id_pegawai
-										WHERE panel_utsman.tt.nomor_transaksi_wisata IN ($id)
+										WHERE panel_utsman.tt.nomor_transaksi_tht IN ($id)
 									ORDER BY
 										id_transaksi DESC
 									) RECAP

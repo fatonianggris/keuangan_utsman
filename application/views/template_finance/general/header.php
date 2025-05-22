@@ -1,5 +1,5 @@
-<?php $user = $this->session->userdata('sias-finance');?>
-<?php $page = $this->db->get_where('general_page', array('id_general_page' => 1))->result();?>
+<?php $user = $this->session->userdata('sias-finance'); ?>
+<?php $page = $this->db->get_where('general_page', ['id_general_page' => 1])->result(); ?>
 <div id="kt_header" class="header header-fixed">
     <!--begin::Container-->
     <div class="container-fluid d-flex align-items-stretch justify-content-between">
@@ -9,7 +9,7 @@
             <div id="kt_header_menu" class="header-menu header-menu-mobile header-menu-layout-default">
                 <!--begin::Header Nav-->
                 <ul class="menu-nav">
-                    <li class="menu-item menu-item-submenu menu-item-rel <?php echo @$nav_dash; ?>"
+                    <li class="menu-item menu-item-submenu menu-item-rel                                                                         <?php echo @$nav_dash; ?>"
                         data-menu-toggle="click" aria-haspopup="true">
                         <a href="<?php echo site_url("/finance/dashboard") ?>" class="menu-link">
                             <span class="menu-text text-danger">Dashboard</span>
@@ -18,7 +18,7 @@
 
                     </li>
                     <?php if ($user[0]->id_role_struktur == 5) {?>
-                    <li class="menu-item menu-item-submenu menu-item-rel <?php echo @$nav_in; ?>"
+                    <li class="menu-item menu-item-submenu menu-item-rel<?php echo @$nav_in; ?>"
                         data-menu-toggle="click" aria-haspopup="true">
                         <a href="javascript:;" class="menu-link menu-toggle">
                             <span class="menu-text">Pemasukan</span>
@@ -79,8 +79,8 @@
                         </div>
                     </li>
                     <?php }?>
-
-                    <li class="menu-item menu-item-submenu menu-item-rel <?php echo @$nav_out; ?>"
+                    <?php if ($user[0]->id_role_struktur == 7 || $user[0]->id_role_struktur == 5) {?>
+                    <li class="menu-item menu-item-submenu menu-item-rel<?php echo @$nav_out; ?>"
                         data-menu-toggle="click" aria-haspopup="true">
                         <a href="javascript:;" class="menu-link menu-toggle">
                             <span class="menu-text">Pengeluaran</span>
@@ -142,8 +142,9 @@
                             </ul>
                         </div>
                     </li>
-                    <?php if ($user[0]->id_role_struktur == 7 || $user[0]->id_role_struktur == 5) {?>
-                    <li class="menu-item menu-item-submenu menu-item-rel <?php echo @$nav_save; ?>"
+                    <?php }?>
+                    <?php if ($user[0]->id_role_struktur == 7 || $user[0]->id_role_struktur == 5 || $user[0]->id_role_struktur == 10) {?>
+                    <li class="menu-item menu-item-submenu menu-item-rel<?php echo @$nav_save; ?>"
                         data-menu-toggle="click" aria-haspopup="true">
                         <a href="javascript:;" class="menu-link menu-toggle">
                             <span class="menu-text">Simpan Pinjam</span>
@@ -279,7 +280,7 @@
                                                     <span class="menu-text">Daftar Nasabah</span>
                                                 </a>
                                             </li>
-											<?php if ($user[0]->id_role_struktur == 5) {?>
+                                            <?php if ($user[0]->id_role_struktur == 5) {?>
                                             <li class="menu-item" aria-haspopup="true">
                                                 <a href="<?php echo site_url("/finance/savings/savings_recap") ?>"
                                                     class="menu-link">
@@ -289,7 +290,7 @@
                                                     <span class="menu-text">Insight Tabungan</span>
                                                 </a>
                                             </li>
-											<?php }?>
+                                            <?php }?>
                                             <li class="menu-item" aria-haspopup="true">
                                                 <a href="<?php echo site_url("/finance/savings/saving_general_transaction_employee") ?>"
                                                     class="menu-link">
@@ -310,12 +311,12 @@
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
-                                                <a href="<?php echo site_url("/finance/savings/saving_tour_transaction_employee") ?>"
+                                                <a href="<?php echo site_url("/finance/savings/saving_tht_transaction_employee") ?>"
                                                     class="menu-link">
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Setor & Tarik Tabungan Wisata</span>
+                                                    <span class="menu-text">Setor & Tarik Tabungan THT</span>
                                                 </a>
                                             </li>
                                             <?php }?>
@@ -421,16 +422,16 @@
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Tambah Nasabah</span>
+                                                    <span class="menu-text">Tambah Debitur</span>
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
-                                                <a href="<?php echo site_url("/finance/savings/list_personal_saving") ?>"
+                                                <a href="<?php echo site_url("/finance/debts/list_employee_debt") ?>"
                                                     class="menu-link">
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Daftar Nasabah</span>
+                                                    <span class="menu-text">Daftar Debitur</span>
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
@@ -439,7 +440,7 @@
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Insight Tabungan</span>
+                                                    <span class="menu-text">Insight Hutang</span>
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
@@ -459,9 +460,9 @@
                         </div>
                     </li>
                     <?php }?>
-                    <?php if ($user[0]->id_role_struktur == 7) {?>
+                    <?php if ($user[0]->id_role_struktur == 7 || $user[0]->id_role_struktur == 10) {?>
                     <?php } else {?>
-                    <li class="menu-item menu-item-submenu menu-item-rel <?php echo @$nav_bud; ?>"
+                    <li class="menu-item menu-item-submenu menu-item-rel<?php echo @$nav_bud; ?>"
                         data-menu-toggle="click" aria-haspopup="true">
                         <a href="javascript:;" class="menu-link menu-toggle">
                             <span class="menu-text">Anggaran</span>
@@ -565,7 +566,7 @@
                     </li>
                     <?php }?>
                     <?php if ($user[0]->id_role_struktur == 1) {?>
-                    <li class="menu-item menu-item-submenu menu-item-rel  <?php echo @$nav_set; ?>"
+                    <li class="menu-item menu-item-submenu menu-item-rel<?php echo @$nav_set; ?>"
                         data-menu-toggle="click" aria-haspopup="true">
                         <a href="javascript:;" class="menu-link menu-toggle">
                             <span class="menu-text">Pengaturan</span>
@@ -789,9 +790,9 @@
             <div class="dropdown ">
                 <!--begin::Toggle-->
                 <?php
-$words = explode(" ", strip_tags($user[0]->nama_akun));
-$limit_word = implode(" ", array_splice($words, 0, 2));
-?>
+                    $words      = explode(" ", strip_tags($user[0]->nama_akun));
+                    $limit_word = implode(" ", array_splice($words, 0, 2));
+                ?>
                 <div class="topbar-item " data-toggle="dropdown" data-offset="10px,0px">
                     <div
                         class="btn btn-icon btn-dropdown btn-outline-success  btn-hover-white d-flex align-items-center btn-lg px-md-2 w-md-auto">
